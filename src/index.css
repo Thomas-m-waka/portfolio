@@ -1,0 +1,53 @@
+/* index.css - Global Styles */
+
+/* Resetting default margin and padding for the body */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #131313; /* Light background color for global styles */
+  color: rgba(242, 225, 225, 0.87); /* Default text color */
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Ensuring images don't overflow or break the layout */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make sure everything stays within the viewport and prevent scrolling */
+html, body {
+  overflow-x: hidden; /* No horizontal scrolling */
+  width: 100%;
+}
+
+/* Generic button styles */
+button {
+  border-radius: 8px;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+button:hover {
+  border-color: #646cff;
+}
+
+/* Media Queries for Light Theme */
+@media (prefers-color-scheme: light) {
+  body {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+}

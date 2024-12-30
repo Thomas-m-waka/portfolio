@@ -1,0 +1,111 @@
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;  /* Adjusted padding for better spacing */
+    background-color: #333;
+    color: white;
+    width: 100%;
+    box-sizing: border-box;  /* Ensures padding doesn't affect layout */
+    position: fixed;  /* Keeps the navbar fixed at the top */
+    top: 0;
+    z-index: 10;  /* Makes sure navbar stays above other content */
+  }
+  
+  .navbar .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-right: 20px;
+    width: 120px;
+    border-radius:4px;
+    background-color:aqua;
+  }
+  
+  .navbar .nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+  }
+  
+  .navbar .nav-links li {
+    margin: 0 15px;
+  }
+  
+  .navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar .nav-links a:hover {
+    background-color: #444;
+  }
+  
+  /* Mobile menu (hidden by default) */
+  .navbar .nav-links-mobile {
+    display: none;  /* Hidden by default */
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding-top: 10px;
+    box-sizing: border-box;
+  }
+  
+  .navbar .nav-links-mobile a {
+    padding: 15px;
+    border-top: 1px solid #fff;
+    font-size: 1.2rem;  /* Ensuring links are larger and easier to read on mobile */
+    text-align: center;
+  }
+  
+  .navbar .mobile-menu-icon {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: none;  /* Hidden by default */
+  }
+  
+  /* Media Queries for responsiveness */
+  @media (max-width: 768px) {
+    .navbar .nav-links {
+      display: none;  /* Hide navigation links on mobile */
+    }
+  
+    .navbar .mobile-menu-icon {
+      display: block;  /* Show mobile menu icon */
+    }
+  
+    .navbar .nav-links-mobile {
+      display: flex;  /* Show mobile menu when toggled */
+    }
+  
+    .navbar .logo {
+      font-size: 1.5rem;  /* Slightly smaller logo on mobile */
+    }
+  }
+  
+  /* For larger screens (e.g., laptops) */
+  @media (min-width: 769px) {
+    .navbar .nav-links {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .navbar .logo {
+      margin-right: 20px;
+    }
+  
+    .navbar .nav-links a {
+      font-size: 1.2rem;
+      padding: 10px 20px;
+    }
+  }
+  

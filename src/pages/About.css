@@ -1,0 +1,110 @@
+/* About Section Styling */
+.about {
+  padding: 60px 40px;
+  background-color: #090909;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin-top: 60px;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2.8rem;
+  color: white;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.about p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto 30px;
+}
+
+.about-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  justify-items: center;
+  margin-top: 40px;
+}
+
+.section {
+  background-color: black;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  gap:30px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section h3 {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.section p {
+  font-size: 1rem;
+  color: hsl(0, 0%, 100%);
+  line-height: 1.6;
+}
+
+.section:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(47, 238, 225, 0.2);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .about {
+    padding: 40px 20px;
+  }
+
+  .about h2 {
+    font-size: 2.5rem;
+  }
+
+  .about p {
+    font-size: 1.1rem;
+  }
+
+  .about-details {
+    gap: 30px;
+  }
+
+  .section h3 {
+    font-size: 1.8rem;
+  }
+
+  .section p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about h2 {
+    font-size: 2rem;
+  }
+
+  .about p {
+    font-size: 1rem;
+  }
+
+  .about-details {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .section h3 {
+    font-size: 1.6rem;
+  }
+
+  .section p {
+    font-size: 0.9rem;
+  }
+}
