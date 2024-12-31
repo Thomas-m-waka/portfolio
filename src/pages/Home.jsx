@@ -1,5 +1,6 @@
 import React from 'react';
 import './Home.css';
+import tomImage from '../assets/tom.jpg';  
 
 const Home = () => (
   <section className="hero-section">
@@ -9,10 +10,12 @@ const Home = () => (
       <a href="/contact" className="cta">Contact Me</a>
     </div>
     <div className="image-container">
-      <img className="profile-image" src="src/assets/tom.jpg" alt="Tom" />
+      <img className="profile-image" src={tomImage} alt="Tom" />
     </div>
   </section>
 );
 
 export default Home;
+
+
 

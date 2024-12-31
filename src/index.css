@@ -15,11 +15,6 @@ a {
   text-decoration: none;
 }
 
-/* Ensuring images don't overflow or break the layout */
-img {
-  max-width: 100%;
-  height: auto;
-}
 
 /* Make sure everything stays within the viewport and prevent scrolling */
 html, body {
