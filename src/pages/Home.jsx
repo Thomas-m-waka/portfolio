@@ -11,7 +11,7 @@ import Contact from './Contact';
 
 const Home = () => (
   <>
-    {/* Hero Section */}
+    {}
     <section className="hero-section" id="home">
       <div className="text-container">
         <h1>Hi, I'm a Software Developer</h1>
@@ -28,13 +28,13 @@ const Home = () => (
       </div>
     </section>
 
-    {/* Other Sections */}
+    {}
     <About />
     <Services />
     <Projects />
     <Contact />
 
-    {/* Floating WhatsApp Icon */}
+    {}
     <a
       href="https://wa.me/254791508494"
       className="floating-whatsapp"
