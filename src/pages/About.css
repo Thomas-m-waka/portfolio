@@ -1,5 +1,6 @@
 /* About Section Styling */
 .about {
+  margin-top:0;
   padding: 60px 40px;
   background-color: #090909;
   border-radius: 15px;
@@ -9,8 +10,16 @@
 }
 
 .about h2 {
+  margin-top:0;
   font-size: 2.8rem;
   color: white;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.about h2 {
+  margin-top:0;
+  font-size: 2.8rem;
+  color:rgb(118, 247, 223);
   margin-bottom: 20px;
   font-weight: 600;
 }

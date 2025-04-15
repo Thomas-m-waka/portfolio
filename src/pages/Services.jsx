@@ -5,7 +5,7 @@ import businessIntelligenceImage from '../assets/web.png';
 import apiIntegrationImage from '../assets/api.png';
 
 const Services = () => (
-  <section className="services">
+  <section className="services" id="services">
     <h2>My Services</h2>
     <div className="services-list">
       <div className="service-item">

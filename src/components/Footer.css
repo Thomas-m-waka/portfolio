@@ -5,6 +5,7 @@
 }
 
 .footer-content {
+  margin-left:50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -39,7 +40,13 @@
   text-align: center;
   width: 100%;
   margin-top: 10px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #ccc;
 }
 
+
+@media (max-width: 720px) {
+  .footer-content {
+    margin-left: 0;
+  }
+}

@@ -6,15 +6,14 @@ import minimaxImage from '../assets/kk.png';
 import paystackImage from '../assets/paystack.png';
 
 const Projects = () => (
-  <section className="projects">
-    <h2>My Projects</h2>
-    <p>A showcase of my work and accomplishments.</p>
+  <section className="projects" id="projects">
+    <h3>My Projects</h3>
     <div className="projects-list">
       <div className="project-item">
         <div className="image-container">
           <img src={deoxImage} alt="Deox - E-commerce" />
         </div>
-        <h3>Deox - E-commerce</h3>
+        <h2>Deox - E-commerce</h2>
         <p>An e-commerce platform with integrated Mpesa API for payments and Bulk SMS for notifications.</p>
       </div>
 
@@ -22,7 +21,7 @@ const Projects = () => (
         <div className="image-container">
           <img src={financImage} alt="FinancAI" />
         </div>
-        <h3>FinancAI</h3>
+        <h2>FinancAI</h2>
         <p>A financial AI application powered by Django REST API and SMTP for email notifications.</p>
       </div>
 
@@ -30,7 +29,7 @@ const Projects = () => (
         <div className="image-container">
           <img src={minimaxImage} alt="Minimax" />
         </div>
-        <h3>Minimax</h3>
+        <h2>Minimax</h2>
         <p>An application utilizing the GetUserMedia API for real-time media capture and processing.</p>
       </div>
 
@@ -38,7 +37,7 @@ const Projects = () => (
         <div className="image-container">
           <img src={paystackImage} alt="Bowanana Application" />
         </div>
-        <h3>Appointment Application</h3>
+        <h2>Appointment Application</h2>
         <p>A mobile app integrated with Paystack for payments and Djoser for authentication.</p>
       </div>
     </div>

@@ -1,12 +1,18 @@
 import React from 'react';
 import './Home.css';
 import tomImage from '../assets/tom.jpg'; 
-import { Link } from 'react-router-dom';
 import { FaWhatsapp } from 'react-icons/fa'; 
+
+// Import other sections
+import About from './About';
+import Services from './Services';
+import Projects from './Projects';
+import Contact from './Contact';
 
 const Home = () => (
   <>
-    <section className="hero-section">
+    {/* Hero Section */}
+    <section className="hero-section" id="home">
       <div className="text-container">
         <h1>Hi, I'm a Software Developer</h1>
         <p>
@@ -14,8 +20,7 @@ const Home = () => (
           frontend and backend development, including database management. I possess expertise in
           <strong> Django, Python, HTML5, CSS, JavaScript, and React.</strong>
         </p>
-
-        <Link to="/contact" className="cta">Contact Me</Link>
+        <a href="#contact" className="cta">Contact Me</a>
       </div>
 
       <div className="image-container">
@@ -23,7 +28,13 @@ const Home = () => (
       </div>
     </section>
 
-    {/* ✅ Floating WhatsApp Icon */}
+    {/* Other Sections */}
+    <About />
+    <Services />
+    <Projects />
+    <Contact />
+
+    {/* Floating WhatsApp Icon */}
     <a
       href="https://wa.me/254791508494"
       className="floating-whatsapp"
@@ -36,4 +47,5 @@ const Home = () => (
 );
 
 export default Home;
+
 

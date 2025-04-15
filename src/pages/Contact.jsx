@@ -2,7 +2,7 @@ import React from 'react';
 import './Contact.css';
 
 const Contact = () => (
-  <section className="contact">
+  <section className="contact" id="contact">
     <div className="contact-info">
       <h3>Contact Information</h3>
       <p>Email: <a href="mailto:thomasmmuteti4@gmail.com">thomasmmuteti4@gmail.com</a></p>
