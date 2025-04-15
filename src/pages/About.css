@@ -10,14 +10,14 @@
 
 .about h2 {
   font-size: 2.8rem;
-  color: rgb(115, 228, 208);
+  color: white;
   margin-bottom: 20px;
   font-weight: 600;
 }
 
 .about p {
   font-size: 1.2rem;
-  color: #555;
+  color: #ebe8e8;
   line-height: 1.8;
   max-width: 800px;
   margin: 0 auto 30px;
@@ -44,7 +44,7 @@
 
 .section h3 {
   font-size: 2rem;
-  color: rgb(110, 224, 209);
+  color:white;
   margin-bottom: 15px;
 }
 
