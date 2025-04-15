@@ -2,8 +2,6 @@ import React from 'react';
 import './Home.css';
 import tomImage from '../assets/tom.jpg'; 
 import { FaWhatsapp } from 'react-icons/fa'; 
-
-// Import other sections
 import About from './About';
 import Services from './Services';
 import Projects from './Projects';
